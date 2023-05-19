@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+  background-image: url(img/png_confetti_85606.png);
+}
+
+/* @media screen and (max-width: 390px) {
+
+  body {
+    background-image: url(img/png_confetti_85606.png);
+  }
+  .row{
+    width: 220%;
+    justify-content: space-between;
+    margin-left: -55px;
+
+  }
+  .aside{
+    width: 220px;
+  }
+  .bside{
+    width: 220px;
+  }
+  .header{
+    width: 540px;
+  }
+  .footer{
+    width: 540px;
+  }
+}  */
+
+.header {
+  background-color: #0099cc;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.aside {
+  background-color: #33b5e5;
+
+  padding: 10px;
+  color: #000000;
+  text-align: left;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 40%;
+  margin-left: 400px;
+  /* justify-content: space-between; */
+}
+
+.bside {
+  background-color: #33b5e5;
+  padding: 10px;
+  color: #000000;
+  text-align: left;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 40%;
+  margin-left: 100px;
+  /* justify-content: space-between; */
+}
+
+.row {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 50px;
+  /* width: 500px; */
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+
+/* For mobile phones */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Optional: Add other media queries as needed */
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url(img/png_confetti_85606.png);
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .bside,
+  .aside {
+    width: 100%;
+    margin: 10px;
+  }
+  .footer{
+    margin-top: 50px;
+  }
+}
